@@ -1,0 +1,18 @@
+{
+  "name": "levelup-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-migration": "knex migrate:make --env development",
+    "migrate:up": "knex migrate:latest --env development",
+    "migrate:down": "knex migrate:rollback --env development"
+  },
+  "author": "Somoye Ayotunde <somoye.ayotunde@gmail.com>",
+  "license": "(ISC)",
+  "dependencies": {
+    "knex": "^0.16.3",
+    "mysql": "^2.16.0"
+  }
+}
