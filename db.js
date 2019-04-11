@@ -2,7 +2,6 @@ const config = require('./knexfile');
 const knex = require('knex')(config.development); 
 
 // Querry Db Version
-
 // using promises
 // knex.raw('SELECT VERSION()').then(version => {
 //     console.log('DB Version',  version);
